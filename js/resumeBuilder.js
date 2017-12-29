@@ -78,7 +78,7 @@
      }
    ]
  }
-
+//
 projects.display = function() {
   if(projects.projects.length > 0){
     for(var i = 0; i < projects.projects.length; i++){
@@ -185,24 +185,7 @@ work.display = function() {
 
 $("#mapDiv").append(googleMap);
 
-// Internationalize Name
-$("#main").append(internationalizeButton);
-
-function inName(name){
-    name = name.trim().split(" ");
-    name[1] = name[1].toUpperCase();
-    name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
-    return name[0] + " " + name[1];
-}
-
  work.display();
  education.display();
  bio.display();
  projects.display();
-
- /*$(document).click(function(loc) {
-   var x = loc.pageX;
-   var y = loc.pageY;
-
-   logClicks(x,y);
- });*/
