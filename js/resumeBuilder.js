@@ -11,7 +11,7 @@
    "welcomeMessage" : "Welcome to my Bio!",
    "skills" : ["JavaScript","CSS","HTML","Drafting"],
    "biopic" : "images/fry.jpg"
-  }
+ };
 
  var work = {
     "jobs" : [
@@ -37,13 +37,13 @@
         "description" : "Technician role to splice advanced fiber and copper networks"
       }
     ]
-  }
+  };
 
  var education = {
     "schools" : [
       {
         "name" : "Cuycamaca Community College",
-        "city" : "Rancho San Diego, CA",
+        "location" : "Rancho San Diego, CA",
         "degree" : "Cisco",
         "majors" : ["Cisco Networking"],
         "dates" : "2010 - 2012",
@@ -51,7 +51,7 @@
       },
       {
         "name" : "Grossmont Community College",
-        "city" : "El Cajon, CA",
+        "location" : "El Cajon, CA",
         "degree" : "Business Administration",
         "majors" : ["Accounting"],
         "dates" : "2004 - 2006",
@@ -66,7 +66,7 @@
         "url" : "http://www.udacity.com/"
       }
     ]
-  }
+  };
 
  var projects = {
    "projects" : [
@@ -77,7 +77,7 @@
        "images" : ["images/197x148.gif"]
      }
    ]
- }
+ };
 //
 projects.display = function() {
   if(projects.projects.length > 0){
@@ -101,7 +101,7 @@ projects.display = function() {
         }
     }
   }
-}
+};
 
 bio.display = function() {
    var formattedName = HTMLheaderName.replace("%data%", bio.name);
@@ -127,7 +127,7 @@ bio.display = function() {
      }
    }
 
-}
+};
 
 education.display = function() {
   if (education.schools.length > 0){
@@ -137,7 +137,7 @@ education.display = function() {
       var formattedSchoolName = HTMLschoolName.replace('%data%',education.schools[i].name);
       formattedSchoolName = formattedSchoolName.replace('#', education.schools[i].url);
       formattedSchoolName += HTMLschoolDegree.replace('%data%',education.schools[i].degree);
-      var formattedSchoolLocation = HTMLschoolLocation.replace('%data%',education.schools[i].city);
+      var formattedSchoolLocation = HTMLschoolLocation.replace('%data%',education.schools[i].location);
       var formattedSchoolDates = HTMLschoolDates.replace('%data%',education.schools[i].dates);
 
       $('.education-entry:last').append(formattedSchoolName,formattedSchoolDates,formattedSchoolLocation);
@@ -161,7 +161,7 @@ education.display = function() {
       $('.education-entry:last').append(formattedTitle, formattedDates, formattedUrl);
     }
   }
-}
+};
 
 work.display = function() {
   if (work.jobs.length > 0) {
@@ -181,7 +181,7 @@ work.display = function() {
       $('.work-entry:last').append(formattedWorkDescription);
     }
   }
-}
+};
 
 $("#mapDiv").append(googleMap);
 
