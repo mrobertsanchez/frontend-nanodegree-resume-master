@@ -25,14 +25,14 @@
       {
         "employer" : "AT&T",
         "title" : "Network Services Manager",
-        "location" : "San Diego, CA",
+        "location" : "Escondido, CA",
         "dates" : "2012 - 2015",
         "description" : "Supervisory role for crew of telecom maintenance technicians"
       },
       {
         "employer" : "AT&T",
         "title" : "Splicing Technician",
-        "location" : "San Diego, CA",
+        "location" : "National City, CA",
         "dates" : "2007 - 2012",
         "description" : "Technician role to splice advanced fiber and copper networks"
       }
